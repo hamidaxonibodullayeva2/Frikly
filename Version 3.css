@@ -1,0 +1,390 @@
+/*font-family: "Open Sans", sans-serif*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+/*font-family: "Crimson Pro", serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+/*font-family: "Roboto", sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+/********************************************Nav*/
+.container{
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1440px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.titleImg{
+    border-bottom: 1px solid black;
+    max-width: 370px;
+    margin-top: 15.7px;
+    margin-bottom: 25px;
+}
+/********************************************Header*/
+header{
+    background: url(../media/bg-img.svg);
+    background-position: top;
+    height: 607px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#headerText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-family: "Crimson Pro", serif;
+    position: relative;
+    text-align: center;
+    bottom: 108px;
+    left: 35px;
+}
+
+h1{
+    font-weight: 400;
+}
+
+span, h4{
+    color: #E67136;
+    font-weight: 600;
+}
+
+.join{
+    margin-left: 65px;
+}
+
+.button{
+    background: #E67136;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 40px;
+    padding: 20px 80px;
+    border: none;
+    border-radius: 16px;
+    transition: box-shadow background-color 0.5s;
+}
+
+.button:hover{
+    box-shadow: -15px 15px 20px hsla(0, 0%, 0%, 65%);
+    background-color: hsl(20, 78%, 50%);
+}
+/********************************************Article 1, 2, 3*/
+.article1, .article2, .article3, .article5, .article6{
+    background-color: #F5F4F4;  
+    height: 726px;
+    margin-bottom: 100px;
+}
+.articleText:not(p){
+    font-family: "Crimson Pro", serif;
+    position: relative;
+    bottom: 72.6px;
+    top: 7.26px;
+}
+
+h2:not(.black){
+    color: #E67136;
+    font-size: 49px;
+    line-height: 50px;
+    margin-bottom: 16px;
+    letter-spacing: 0.3px;
+    text-align: center;
+}
+
+.articleText h3{
+    font-size: 29.04px;
+    margin-bottom: 32px;
+    font-weight: 550;
+    letter-spacing: 0.3px;
+    line-height: 40px;
+}
+
+.articleText p{
+    font-family: "Open Sans", sans-serif;
+    line-height: 40px;
+    font-weight: 200;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+.articleRooms{
+    margin-top: 32px;
+    position: relative;
+    left: 38.88px;
+}
+
+.article2 .articleText h2{
+    font-size: 42px;
+}
+
+.article2 .articleRooms{
+    left: -12.96px;
+    right: 38.88px;
+}
+
+.article2 .articleText{
+    left: 25.92px;
+}
+
+.article3 .articleText{
+    right: 38.88px;
+}
+
+.article3 .articleText h3{
+    font-size: 17px;
+    font-weight: 400;
+}
+/********************************************Article 4*/
+.article4, .article5, .article7, .article8{
+    height: 650px;
+    text-align: center;
+    margin-top: -32.5px;
+}
+
+.lowerH2{
+    font-family: "Crimson Pro";
+    font-weight: bolder;
+}
+
+.article4 .container, .article7 .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px 200px 200px;
+    position: relative;
+    top: 97.5px;
+}
+
+.article4Sections h3{
+    font-family: "Crimson Pro", serif;
+    line-height: 20px;
+    margin: 19.5px 0;
+}
+
+.article4Sections p{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+}
+
+.article4Sections p:not(.p){
+    position: relative;
+    top: 20px;
+}
+/********************************************Article 5*/
+.article5{
+    height: 415px;
+}
+.article5 .container, .article8 .container{
+    flex-direction: column;
+    position: relative;
+    top: 41.5px;
+}
+
+.article5 .articleText h2{
+    font-size: 37.35px;
+    font-weight: 450;
+    letter-spacing: 0.3px;
+    line-height: 40px;
+}
+
+.black span{
+    font-size: 53.95px;
+}
+
+.article5 .articleText h3{
+    margin-top: 32px;
+    margin-bottom: 0;
+}
+
+.article5 .articleText p{
+    line-height: 50px;
+    font-weight: 320;
+    font-size: 13.1px;
+    letter-spacing: 0.5px;
+}
+/********************************************Article 6*/
+.article6 .container{
+    width: 100%;
+    max-width: 1440px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(4, 230px);
+    grid-template-rows: repeat(4, 183px);
+    grid-gap: 50px 60px;
+
+}
+.article6 .articleText{
+    position: relative;
+    top: 29.04px;
+    margin-bottom: 108.9px;
+}
+
+.article6Brands{
+    max-width: 230px;
+    height: 183px;
+    object-fit: fill;
+    object-position: center;
+}
+/********************************************Article 7*/
+.article7 .container{
+    top: 0;
+    margin: 100px 50px;
+    grid-column-gap: 20px;
+    grid-template-columns: 245px 245px 245px 245px;
+    font-size: 16px;
+    max-width: 1200px;
+    width: 90%;
+    justify-content: center;
+}
+
+.article7 .container .article4Sections h3{
+    line-height: 16px;
+}
+.article7 .container .article4Sections p{
+    font-size: 12px;
+}
+/*
+.article4Sections h3{
+    font-family: "Crimson Pro", serif;
+    line-height: 20px;
+    margin: 19.5px 0;
+}
+
+.article4Sections p{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+}
+
+.article4Sections p:not(.p){
+    position: relative;
+    top: 20px;
+}
+*/
+.bgGreen{
+    width: 168px;
+    height: 97.5px;
+    padding: 25.92px 26px;
+    background-color: #506961;
+    border: none;
+    border-radius: 32px;
+}
+/********************************************Article 8*/
+.article8{
+    height: 338px;
+    margin-bottom: 40px;
+}
+.article8 .container{
+    top: 65px;
+    height: 33.8px;
+    padding-top: 33.8px;
+    font-size: 30px;
+    gap: 36px;
+}
+.article8 .container .button{
+    margin-top: 0;
+}
+/********************************************Footer*/
+footer{
+    background-color: #506961;
+    height: 444px;
+}
+.footer .container{
+    padding: 0 40px;
+    background-color: #fff;
+    max-width: 1392px;
+    height: 317px;
+    border: none;
+    border-radius: 40px;
+    position: relative;
+    top: 74px;
+    bottom: 53px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    overflow: hidden;
+}
+
+.logo{
+    position: relative;
+    left: 100px;
+}
+
+.footerInfo, .footerSocial{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 200px;
+    position: relative;
+    left: 255px;
+    text-align: left;
+    font-family: "Roboto", sans-serif;
+}
+
+.footerContact{
+    display: grid;
+    grid-template-columns: 0.4fr 2fr;
+    grid-template-rows: 1fr 0.2fr 0.2fr;
+    align-items: center;
+    grid-row-gap: 10px;
+    grid-column-gap: 0px;
+    
+}
+
+.footerLine{
+    border-top: 1px solid #BBBBBB;
+    width: 200%;
+    position: relative;
+    top: -100px;
+    right: 62px;
+}
+
+.footer .container p:first-of-type{
+    font-family: "Crimson Pro", serif;
+    position: absolute;
+    bottom: 94px;
+    left: 76px;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    font-style: normal;
+    line-height: 35px;
+}
+
+.footer .container p:last-of-type{
+    font-family:"Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    position: absolute;
+    left: 555px;
+    bottom: 43px;
+}
+
+.footerSocial{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    max-width: 130px;
+    position: relative;
+    left: 823px;
+    bottom: 117px;
+}
